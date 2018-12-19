@@ -13,7 +13,6 @@
 
     <script type="text/javascript" src="js/digipet.js"></script>
 
-    <title>Hello, world!</title>
   </head>
 
   <body class="digitPet">
@@ -26,7 +25,7 @@
               <div class="card">
                 <div class="card-body">
                   <img src="assets/cat.png" alt="cat logo" class="img-fluid digiPetImg">
-                  <form>
+                  <form onSubmit="createPet()">
                     <div class="form-group row">
                       <label for="petName" class="col-sm-2 col-form-label">Pet Name: </label>
                       <div class="col-sm-10">
@@ -38,19 +37,19 @@
                         <legend class="col-form-label col-sm-2 pt-0">Pet Type:</legend>
                         <div class="col-sm-10">
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="radioKitty" value="option1" checked>
+                            <input class="form-check-input" type="radio" name="gridRadios" id="radioKitty" value="Kitty" checked>
                             <label class="form-check-label" for="radioKitty">
                               Kitty
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="radioDog" value="option2">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="radioDog" value="Dog">
                             <label class="form-check-label" for="radioDog">
                               Dog
                             </label>
                           </div>
                           <div class="form-check disabled">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="radioOtter" value="option3">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="radioOtter" value="Otter">
                             <label class="form-check-label" for="radioOtter">
                               Otter
                             </label>
